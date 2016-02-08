@@ -10,7 +10,8 @@ layout: default
   </div>
 
   <div class="home-bio">
-    {% markdown bio.md %}
+    {% capture bio-include %}{% include bio.md %}{% endcapture %}
+    {{ bio-include | markdownify }}
   </div>
 
   <div class="home-collection">
