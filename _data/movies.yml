@@ -1,0 +1,44 @@
+- title: Gunga Din
+  year:  1939
+  cover: gunga-din.jpg
+  id:    tt0031398
+  desc:  > #
+    In 19th century India, three British soldiers and a native waterbearer
+    must stop a secret mass revival of the murderous Thuggee cult before it
+    can rampage across the land.
+
+- title: Pulp Fiction
+  year:  1994
+  cover: pulp-fiction.jpg
+  id:    tt0110912
+  desc:  >#
+    The lives of two mob hit men, a boxer, a gangster's wife, and a pair of
+    diner bandits intertwine in four tales of violence and redemption.
+
+- title: The Long Grey Line
+  year:  1955
+  cover: long-grey-line.jpg
+  id:    tt0048312
+  desc:  >#
+    The life story of a salt-of-the-earth Irish immigrant, who becomes an Army
+    Noncommissioned Officer and spends his 50 year career at the United States
+    Military Academy at West Point.
+
+- title: The Seventh Seal
+  year:  1957
+  cover: seventh-seal.jpg
+  id:    tt0050976
+  desc:  >#
+    A man seeks answers about life, death, and the existence of God as he plays
+    chess against the Grim Reaper during the Black Plague.
+
+- title: The Bridge on the River Kwai
+  year:  1957
+  cover: bridge-on-the-river-kwai.jpg
+  id:    tt0050212
+  desc:  >#
+    After settling his differences with a Japanese PoW camp commander, a
+    British colonel co-operates to oversee his men's construction of a railway
+    bridge for their captors - while oblivious to a plan by the Allies to destroy
+    it.
+

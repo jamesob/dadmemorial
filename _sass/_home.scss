@@ -1,0 +1,103 @@
+// Header
+.home-header {
+  position: relative;
+  margin-bottom: 30px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -30px;
+    bottom: 0;
+    width: 2px;
+    background: #BBB;
+  }
+
+  img {
+    display: block;
+    height: 450px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  &-title {
+    margin-bottom: 0px;
+  }
+  &-date {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: $title-font;
+    @include date-style;
+  }
+}
+
+
+// Bio
+.home-bio {
+  margin-bottom: 60px;
+  text-align: justify;
+}
+
+
+
+// Collections
+.home-collection {
+  margin-bottom: 60px;
+
+  &-items {
+    position: relative;
+    margin: 0 -8px;
+    @include clearfix;
+  }
+}
+
+.citem {
+  position: relative;
+  float: left;
+  width: 33.3%;
+  padding: 0 8px;
+  margin-bottom: 16px;
+
+  @include mobile-rule {
+    width: 50%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &-info {
+    // Hide for now, work on restyling later...
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: #FFF;
+    @include transition(opacity 150ms ease);
+
+    &-title {
+      font-size: 15px;
+      line-height: 40px;
+      border-bottom: 4px solid #FFF;
+      margin-bottom: 15px;
+    }
+
+    &-description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &:hover {
+    .citem-info {
+      opacity: 1;
+    }
+  }
+}

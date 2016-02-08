@@ -1,112 +1,61 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head>
-
-<title>Richard C. O'Beirne</title>
-
-<!-- Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic'
-  rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic' 
-  rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=PT+Serif' 
-  rel='stylesheet' type='text/css'>
-
-<!-- Style -->
-<link rel="stylesheet/less" type="text/css" href="static/css/page.less" />
-
-<!-- Thirdparty JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="thirdparty/js/less.min.js" type="text/javascript"></script>
-<script src="thirdparty/js/jquery.hypher.js"></script>
-<script src="thirdparty/js/hypher.en-us.js"></script>
-</head>
-
-<body>
-<div id="page">
-
-  <div class="title">
-    <img src="images/in-park.jpg" />
-    <div class='name'>Richard Coleman O'Beirne</div>
-    <div class='years'>1948 &ndash; 2016</div>
+<div class="home">
+  <div class="home-header">
+    <img src="/images/photos/central-park-3.jpg"/>
+    <h1 class="home-header-title">Richard Coleman O'Beirne</h1>
+    <div class="home-header-date">1948 – 2016</div>
   </div>
 
-  <div class="content">
- 
-<p>Richard Coleman O'Beirne was born in The Bronx, New York City on September
-19, 1948 to James "Lad" O'Beirne, a carpenter and musician of note, and Mary
-(n&eacute;e Coleman) O'Beirne, a nurse, both Irish immigrants from County
-Sligo. </p>
+  <div class="home-bio">
+    {% markdown bio.md %}
+  </div>
 
-<p>When Richard was eight years old, his parents moved the family to
-Woodside, Queens due to increasing turbulence in the Bronx. Richard showed an
-early and strong aptitude for mathematics &mdash; while serving detention for
-tardiness in Catholic grade school, Richard would, standing, read math books to
-pass the time.</p>
+  <div class="home-collection">
+    <h2 class="home-collection-title">Books</h2>
+    <div class="home-collection-items">
+      {% for book in site.data.books %}
+        <div class="citem book">
+          <img src="/images/books/{{ book.cover }}"/>
+          <div class="citem-info">
+            <div class="citem-info-title">
+              {{ book.title }}
+              <span class="citem-info-title-year">
+                ({{ book.year }})
+              </span>
+            </div>
+            <div class="citem-info-author">
+              {{ book.author }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 
-<p>He attended Arch Bishop Molloy High School in Briarwood, Queens. During 
-high school he worked part-time as a paper boy, rising early in the mornings
-to assemble newspapers in an empty grocery store. </p>
-
-<p>After graduating Molloy in 1966, he attended Fordham University to pursue
-studies in mathematics. While at Fordham, Richard was an ROTC recruit and a
-member of the Pershing Rifles. This entailed various hijinks including
-transporting a large decommisioned bombshell through the subway and weathering
-many late-night details in Greek diners around Rose Hill. </p>
-
-<p>During college Richard worked various summer jobs, including a night-shift
-janitorial detail in the offices of a phone company. He would later reminisce
-about time spent listening to classical music alone during those cool summer
-nights. He also had a brief stint delivering seasonal mail for the USPS; during
-his first shift, he was scolded by veteran mailmen for completing the day's
-work too early.</p>
-
-<p>After graduating from Fordham, he went on to obtain a Master's degree in
-mathematics from St. John's University, finishing in 1972. He immediately
-entered the US Army as a second lieutenant in the air defense artillery. At his
-time of entrance the Vietnam war was winding down, and the Army was scaling
-back. He was offered a return to civilian life in exchange for a number of
-years in the Army Reserves, which he accepted.</p>
-
-<p>He quickly assumed a position with Electronic Data Systems
-(EDS), a pioneering IT firm in Plano, TX, as a systems engineer. This was a
-role uniquely suited for him: it required the presence and synthesis of
-low-level programming skill, keen business analysis, and agreeable temperament.
-By every account, he excelled in this position.</p>
-
-<p>So much so that EDS sent him around the world to develop systems. After
-Texas, he was sent to San Francisco, where he resided for a year*, and
-subsequently London, where he played a pivotal hand in Bank of America's
-integration with the SWIFT network, a state-of-the-art system used to exchange
-financial data. In London he met the woman who would be his first wife,
-Elizabeth Brower, and traveled prodigiously across the European continent.
-These travels would enrich not only his life, but those of his children and
-spouses. </p>
-
-<p>While with EDS, Richard traveled for a number of assignments in places like
-Mexico City, Saudi Arabia, Singapore, and Hong Kong &mdash; where he ran not
-only a marathon but also with the Hash House Harriers. He would eventually
-return to New York City where he resided until moving down to Virginia.</p>
-
-<div class='section-header'>Movies</div>
-
-<div class="grid">
-  <div class="grid-item"><img src='images/movies/gungadin.jpg' /></div>
-  <div class="grid-item"><img src='images/movies/pulpfiction.jpg' /></div>
-  <div class="grid-item"><img src='images/movies/longgray.jpg' /></div>
-  <div class="grid-item"><img src='images/movies/7thsealposter.jpg' /></div>
-  <div class="grid-item"><img src='images/movies/bridge.jpg' /></div>
+  <div class="home-collection">
+    <h2 class="home-collection-title">Movies</h2>
+    <div class="home-collection-items">
+      {% for movie in site.data.movies %}
+        <div class="citem movie">
+          <img src="/images/movies/280x420/{{ movie.cover }}"/>
+          <div class="citem-info">
+            <div class="citem-info-title">
+              {{ movie.title }}
+              <span class="citem-info-title-year">
+                ({{ movie.year }})
+              </span>
+            </div>
+            <div class="citem-info-description">
+              {{ movie.desc }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
-  </div> <!-- .content -->
-</div> <!-- #page -->
 
-<script>
-  jQuery(function ($) {
-    $('p').hyphenate('en-us');
-  });
-</script>
-
-</body>
-</html>
