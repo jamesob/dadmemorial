@@ -1,0 +1,57 @@
+// Typography styles
+body {
+  font-family: $body-font;
+  color: $body-color;
+  font-size: $body-fsize;
+  line-height: $body-lheight;
+}
+
+p {
+  margin-bottom: $body-margin;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font;
+  color: $title-color;
+}
+
+h1 {
+  font-size: $h1-fsize;
+  line-height: $h1-lheight;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: $h2-fsize;
+  line-height: $h2-lheight;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #BBB;
+}
+
+// Structural styles
+body {
+  background-color: $color-bg;
+}
+
+.site {
+  max-width: $content-width;
+  padding: 20px $content-padding;
+  margin: 0 auto;
+
+
+  &-header {
+
+  }
+
+  &-content {
+
+    &-wrapper {
+
+    }
+  }
+
+  &-footer {
+
+  }
+}
