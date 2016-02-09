@@ -1,0 +1,50 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// General
+$color-bg: #FFF;
+
+$content-width: 760px;
+$content-padding: 20px;
+
+// Typography
+$body-font: 'PT Serif', serif;
+$body-color: #111;
+$title-font: 'Vollkorn', serif;
+$title-color: #111;
+
+$body-fsize: 18px;
+$body-lheight: 28px;
+$body-margin: 30px;
+
+$h1-fsize: 32px;
+$h1-lheight: 48px;
+
+$h2-fsize: 24px;
+$h2-lheight: 34px;
+
+
+// Handful of mixins
+@mixin date-style {
+  font-style: italic;
+  color: #777;
+}
+
+@mixin mobile-rule {
+  @media only screen and (max-width: 520px) {
+    @content;
+  }
+}
+
+
+// First import libraries
+@import "bourbon/bourbon";
+
+// Then import our partials
+@import
+  "reset",
+  "template",
+  "home"
+;

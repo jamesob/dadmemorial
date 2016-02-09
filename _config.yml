@@ -1,0 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Richard C. O'Beirne
+description: > # this means to ignore newlines until "baseurl:"
+  Richard Cole­man O'Beirne was born in The Bronx, New York City on
+  Sep­tem­ber 19, 1948 to James "Lad" O'Beirne, a car­pen­ter and mu­si­cian
+  of note, and Mary (née Cole­man) O'Beirne, a nurse, both Irish im­mi­grants
+  from County Sligo.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-coffeescript
