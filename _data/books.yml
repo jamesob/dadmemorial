@@ -1,27 +1,27 @@
-- title:  Fail-Safe
-  author: Eugene Burdick
-  year:   1962
-  cover:  fail-safe.jpg
-
-- title:  Games People Play
-  author: Eric Berne
-  year:   1964
-  cover:  games-people-play.jpg
-
 - title:  Visual Complex Analysis
   author: Tristan Needham
   year:   1997
   cover:  visual-complex-analysis.jpg
-
-- title:  Prime Obsession
-  author: John Derbyshire
-  year:   2003
-  cover:  prime-obsession.jpg
-
+ 
+- title:  Games People Play
+  author: Eric Berne
+  year:   1964
+  cover:  games-people-play.jpg
+ 
 - title:  Steppenwolf
   author: Hermann Hesse
   year:   1927
   cover:  steppenwolf.jpg
+ 
+- title:  Fail-Safe
+  author: Eugene Burdick
+  year:   1962
+  cover:  fail-safe.jpg
+ 
+- title:  Prime Obsession
+  author: John Derbyshire
+  year:   2003
+  cover:  prime-obsession.jpg
 
 - title:  The Glass Bead Game
   author: Hermann Hesse
